@@ -1,5 +1,7 @@
-publi class OOPSBannerApp{
-    public static void main(String[] args){
-        System.out.println();
+
+
+public class OOPSBannerApp{
+    public static void main(String[] args) {
+        System.out.println("OOPS");
     }
 }
