@@ -1,18 +1,61 @@
-public class OOPSBannerApp{
-    public static void main(String[] args) {
-    String[] lines = new String[7];
+public class Main {
 
-    lines[0] = String.join(" ","   ***   " , " " , "   ***   " , " " , " ******   " , " " , "   *****     ");
-    lines[1] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **    ** " , " " , "  **    **   ");
-    lines[2] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **    ** " , " " , " **          ");
-    lines[3] = String.join(" "," **   ** " , " " , " **   ** " , " " , " ******   " , " " , "   *****     ");
-    lines[4] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **       " , " " , "         **  ");
-    lines[5] = String.join(" "," **   ** " , " " , " **   ** " , " " , " **       " , " " , " **     **   ");
-    lines[6] = String.join(" ","   ***   " , " " , "   ***   " , " " , " **       " , " " , "   *****     ");
-
-    for(String line : lines){
-        System.out.println(line);
+    public static String[] getAPattern() {
+        return new String[] {
+            "   *** ",
+            " **  **",
+            "**   **",
+            "**   **",
+            "**   **",
+            "**  ** ",
+            "  ***  "
+        };
     }
-    
+
+    public static String[] getBPattern() {
+        return new String[] {
+            "   *** ",
+            " **  **",
+            "**   **",
+            "**   **",
+            "**   **",
+            "**  ** ",
+            "  ***  "
+        };
+    }
+
+    public static String[] getCPattern() {
+        return new String[] {
+            "  ***** ",
+            "  **  **",
+            "  **  **",
+            "  ***** ",
+            "  **    ",
+            "  **    ",
+            "  **    "
+        };
+    }
+
+    public static String[] getDPattern() {
+        return new String[] {
+            "  ***** ",
+            " **     ",
+            " **     ",
+            "  ***** ",
+            "       **",
+            "  **   **",
+            "   ***** "
+        };
+    }
+
+    public static void main(String[] args) {
+        String aPattern [] = getAPattern();
+        String cPattern[] = getCPattern();
+        String bPattern[] = getBPattern();
+        String dPattern[] = getDPattern();
+
+        for (int i = 0; i < aPattern.length; i++) {
+            System.out.println(aPattern[i] + " " + bPattern[i] + " " + cPattern[i] + " " + dPattern[i]);
+        }
     }
 }
